@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Basic Style Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cc0000;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.top-bar .logo img {
+    height: 30px;
+}
+
+.top-bar .user-info {
+    font-size: 14px;
+}
+
+/* Main Navigation Styling */
+.header-nav {
+    background-color: #444444;
+    padding: 10px 20px;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav ul li {
+    margin-right: 20px;
+}
+
+.header-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    padding: 10px 20px;
+    background-color: #eeeeee;
+}
+
+.breadcrumb p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Main Content Styling */
+.content {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.content h1 {
+    color: #660000;
+}
+
+.content h1 span {
+    font-size: 18px;
+    color: #555;
+}
+
+.assignment-info {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #cc0000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.submission-status {
+    margin: 20px 0;
+}
+
+.submission-status h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.submission-status table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.submission-status table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Sidebar Navigation Styling */
+.sidebar {
+    position: fixed;
+    top: 80px; /* Adjusted to accommodate the header */
+    right: 0;
+    width: 250px;
+    height: calc(100% - 80px); /* Height adjusted based on the header height */
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 5px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #660000;
+}
+
+.sidebar nav ul li ul {
+    padding-left: 20px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UX Design Course Page">
+    <title>UX Design Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="kl-logo.png" alt="KL University Logo" />
+            </div>
+            <div class="user-info">
+                <span>GELLA YASHWANTH ADITYA 2200031703</span> 
+            </div>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="mycousrses.html">My Courses</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <p>Dashboard &gt; My courses &gt; JAVA-22SDC303A 2024-2025 ODD SEMESTER &gt; Assignments &gt; Home Assignment C01</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h1>JFSD 2024-2025 ODD SEMESTER <span>Home Assignment C01</span></h1>
+        <div class="assignment-info">
+            <p><strong>Opened:</strong> Wednesday, 31 July 2024, 12:00 AM</p>
+            <p><strong>Due:</strong> Tuesday, 15 October 2024, 12:00 AM</p>
+        </div>
+        <button class="btn" onclick="location.href='upload.html'">Add submission</button>
+
+        <!-- Submission Status -->
+        <div class="submission-status">
+            <h2>Submission status</h2>
+            <table>
+                <tr>
+                    <td>Submission status</td>
+                    <td>No submissions have been made yet</td>
+                </tr>
+                <tr>
+                    <td>Grading status</td>
+                    <td>Not graded</td>
+                </tr>
+                <tr>
+                    <td>Time remaining</td>
+                    <td>12 days 1 hour remaining</td>
+                </tr>
+                <tr>
+                    <td>Last modified</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Submission comments</td>
+                    <td><a href="#">Comments (0)</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h3>Navigation</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Site Home</a></li>
+                <li><a href="#">Site Pages</a></li>
+                <li><a href="#">My courses</a>
+                    <ul>
+                        <li><a href="#">COHORTE165DP</a></li>
+                        <li><a href="#">CSEH-CC</a></li>
+                        <li><a href="#">SKC-2024-2025 ODD SEMESTER</a></li>
+                        <!-- Add more courses here -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>

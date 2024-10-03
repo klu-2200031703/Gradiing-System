@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #cc0000; /* Adjusted red color for header */
+            color: #fff;
+            padding: 15px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-container .logo img {
+            width: 50px; /* Reduced logo size */
+        }
+
+        .header-container .user-info {
+            font-size: 14px;
+            text-align: right; /* Align user info to the right */
+        }
+
+        .top-nav {
+            background-color: #444; /* Updated top-nav background color */
+            padding: 10px;
+            text-align: left; /* Align links to the left */
+            margin-top: 5px; /* Added margin to separate from header */
+        }
+
+        .top-nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 14px; /* Adjusted font size */
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            width: 20%;
+            padding-right: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar ul ul {
+            padding-left: 20px;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .main-content {
+            width: 80%;
+            padding-left: 20px;
+        }
+
+        main h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        main h2 {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .assignment-info p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .mark-done {
+            padding: 8px 16px;
+            background-color: #cc0000; /* Adjusted button color */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .mark-done:hover {
+            background-color: #990000; /* Darker shade for hover */
+        }
+
+        .submission-section {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .file-drop {
+            border: 2px dashed #007bff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .upload-area {
+            margin-top: 10px;
+        }
+
+        .file-drop p {
+            color: #777;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .file-info {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .save-btn, .cancel-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .save-btn {
+            background-color: #5cb85c;
+        }
+
+        .cancel-btn {
+            background-color: #cc0000; /* Adjusted cancel button color */
+        }
+
+        .save-btn:hover {
+            background-color: #4cae4c;
+        }
+
+        .cancel-btn:hover {
+            background-color: #990000; /* Adjusted hover color */
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Design Assignment Submission</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="kl-logo.png" alt="KL University Logo">
+            </div>
+            <div class="user-info">
+                <span>GELLA YASHWANTH ADITYA 2200031703</span>
+            </div>
+        </div>
+        <nav class="top-nav">
+            <a href="#">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="mycousrses.html">My courses</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+    <div class="content-container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li>Dashboard</li>
+                <li>Site Home</li>
+                <li>My Courses
+                    <ul>
+                        <li>UX D-22GDU3202 2024-2025 ODD SEMESTER
+                            <ul>
+                                <li>Home Assignment C01</li>
+                                <li>Home Assignment C02</li>
+                                <li>Home Assignment 3</li>
+                                <li>Home Assignment 4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>JFSD ODD SEMESTER</h1>
+            <h2>Home Assignment C01</h2>
+
+            <div class="assignment-info">
+                <p><strong>Opened:</strong> Wednesday, 31 July 2024, 12:00 AM</p>
+                <p><strong>Due:</strong> Tuesday, 15 October 2024, 12:00 AM</p>
+            </div>
+
+            <button class="mark-done">Mark as done</button>
+
+            <section class="submission-section">
+                <h3>Add Submission</h3>
+                <div class="file-drop">
+                    <p>You can drag and drop files here to add them.</p>
+                    <div class="upload-area">
+                        <input type="file" id="file" multiple>
+                    </div>
+                </div>
+                <div class="file-info">
+                    <p>Maximum file size: 5 MB, maximum number of files: 20</p>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button class="save-btn" onclick="validateSubmission()">Save changes</button>
+                <button class="cancel-btn">Cancel</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function validateSubmission() {
+            // Get the file input element
+            var fileInput = document.getElementById('file');
+            // Check if any file is selected
+            if (fileInput.files.length > 0) {
+                // Show success message if file is selected
+                alert('Submission Successful!');
+            } else {
+                // Show error message if no file is selected
+                alert('Please upload a file before saving changes.');
+            }
+        }
+    </script>
+</body>
+</html>

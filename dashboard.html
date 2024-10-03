@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #c71f32;
+            padding: 15px;
+            color: white;
+        }
+
+        .logo {
+            width: 120px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info {
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .logout-btn {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background-color: #ff3e1d;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-list {
+            list-style: none;
+        }
+
+        .course-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .content {
+            width: 70%;
+            margin-left: 20px;
+        }
+
+        .timeline-item {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #c71f32;
+        }
+
+        .timeline-item h4 {
+            color: #c71f32;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="kl-logo.png" alt="KL University Logo" class="logo">
+        </div>
+        <div class="header-right">
+            <span class="user-info">GELLA YASHWANTH ADITYA 2200031703</span>
+            <button class="logout-btn" onclick="window.location.href='login.html'">Log Out</button>
+
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="mycousrses.html">My courses</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside class="sidebar">
+            <h3>Navigation</h3>
+            <ul class="course-list">
+                <li>COHORT 165DP</li>
+                <li>CSEH-CC</li>
+                <li>SOFT-22CS223P</li>
+                <li>...More</li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h2>Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Tuesday, 1 October 2024</h4>
+                    <p>HOME ASSIGNMENT 3 IS DUE - JFSD</p>
+                    <button class="btn" onclick="window.location.href='course.html'">Add Submission</button>
+
+                </div>
+                <div class="timeline-item">
+                    <h4>Tuesday, 15 October 2024</h4>
+                    <p>HOME ASSIGNMENT C01 IS DUE - UX DESIGN</p>
+                    <button class="btn">Add Submission</button>
+                </div>
+                <div class="timeline-item">
+                    <h4>Monday, 28 October 2024</h4>
+                    <p>HOME ASSIGNMENT 4 IS DUE - UX DESIGN</p>
+                    <button class="btn">Add Submission</button>
+                </div>
+                <button class="btn">Show more activities</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
